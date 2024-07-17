@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Breve",
+    "price": "10$",
+    "alt": "Breve",
+    "image": "https://assets.website-files.com/640f43d9a407810f5f8e6247/640f43d9a4078110528e63d9_cup_of_coffee%20(5).png"
+  },
+  {
+    "name": "Corretto",
+    "price": "6$",
+    "alt": "Corretto",
+    "image": "https://assets.website-files.com/640f43d9a407810f5f8e6247/640f43d9a4078110528e63d9_cup_of_coffee%20(5).png"
+  },
+  {
+    "name": "Raf",
+    "price": "9$",
+    "alt": "Raf",
+    "image": "https://assets.website-files.com/640f43d9a407810f5f8e6247/640f43d9a4078110528e63d9_cup_of_coffee%20(5).png"
+  },
+  {
+    "name": "Glace",
+    "price": "6$",
+    "alt": "Glace",
+    "image": "https://assets.website-files.com/640f43d9a407810f5f8e6247/640f43d9a4078110528e63d9_cup_of_coffee%20(5).png"
+  },
+  {
+    "name": "Espresso Laccino",
+    "price": "6$",
+    "alt": "Espresso Laccino",
+    "image": "https://assets.website-files.com/640f43d9a407810f5f8e6247/640f43d9a4078110528e63d9_cup_of_coffee%20(5).png"
+  },
+  {
+    "name": "Irish Coffee",
+    "price": "6$",
+    "alt": "Irish Coffee",
+    "image": "https://assets.website-files.com/640f43d9a407810f5f8e6247/640f43d9a4078110528e63d9_cup_of_coffee%20(5).png"
+  },
+  {
+    "name": "Mocha",
+    "price": "6$",
+    "alt": "Mocha",
+    "image": "https://assets.website-files.com/640f43d9a407810f5f8e6247/640f43d9a4078110528e63d9_cup_of_coffee%20(5).png"
+  }
+]

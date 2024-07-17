@@ -12,6 +12,13 @@ export default {
       fontSize: {
         "6.5xl": "4rem",
       },
+      width: {
+        340: "1360px",
+      },
+      height: {
+        140: "560px",
+        171: "684px",
+      },
     },
   },
   plugins: [],

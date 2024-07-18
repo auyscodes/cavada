@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        donuts: "url(/images/donuts.jpg)",
+      },
       colors: {
         egoorange: "#F3EBE8",
         egodorange: "#F3D7CC",

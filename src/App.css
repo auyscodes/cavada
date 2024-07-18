@@ -5,6 +5,7 @@
 .navBar {
   transition: transform 1s ease-in-out;
 }
+
 .embla_h {
   max-width: 1100px;
   margin: auto;
@@ -12,9 +13,11 @@
   --slide-spacing: 1rem;
   --slide-size: 33.33%;
 }
+
 .embla__viewport_h {
   overflow: hidden;
 }
+
 .embla__container_h {
   backface-visibility: hidden;
   display: flex;
@@ -22,6 +25,7 @@
   touch-action: pan-y pinch-zoom;
   margin-left: calc(var(--slide-spacing) * -1);
 }
+
 .embla__slide_h {
   flex: 0 0 var(--slide-size);
   min-width: 0;
@@ -35,9 +39,11 @@
   --slide-spacing: 1rem;
   --slide-size: 50%;
 }
+
 .embla__viewport_v {
   overflow: hidden;
 }
+
 .embla__container_v {
   backface-visibility: hidden;
   display: flex;
@@ -46,6 +52,7 @@
   height: calc(var(--slide-spacing) + var(--slide-height));
   flex-direction: column;
 }
+
 .embla__slide_v {
   flex: 0 0 var(--slide-size);
   min-height: 0;

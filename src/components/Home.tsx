@@ -1,6 +1,6 @@
 import { Carousel } from "./Carousel";
 import coffee from "../data/coffee.json";
-import donut from "../images/donuts.jpg";
+// import donut from "../images/donuts.jpg";
 import pastry from "../data/pastry.json";
 
 export const Home = () => {
@@ -50,101 +50,93 @@ export const Home = () => {
           <p>Reviews</p>
         </div>
       </div>
-      <div className="flex justify-center mt-40">
-        <div className="max-w-[1360px] flex flex-col">
-          <div className="flex flex-col gap-20 lg:flex-row">
-            <div className="basis-1/2 flex justify-center ">
-              <img
-                className="rounded-lg h-140 object-center object-cover"
-                src="https://png.pngtree.com/png-clipart/20240510/original/pngtree-cheese-cake-strawberry-recipe-png-image_15059175.png"
-                alt="Strawberry Cake"
-              />
-            </div>
-            <div className="basis-1/2 p-20 flex flex-col items-center justify-center gap-10">
-              <p className="text-5xl font-medium">The best day starts here</p>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-20 lg:flex-row">
-            <div className="basis-1/2 p-20 justify-center flex flex-col  gap-10">
-              <p className="text-5xl font-medium">Open everyday</p>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-            <div className="basis-1/2 flex justify-center ">
-              <img
-                className="rounded-lg h-140 object-center object-cover"
-                src="https://png.pngtree.com/png-clipart/20230825/original/pngtree-coffee-shop-building-vector-isolated-picture-image_8479829.png"
-                alt="Coffee Shop"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col justify-center items-center gap-10">
+      <div className="flex flex-col gap-20 lg:flex-row">
+        <div className="basis-1/2 flex justify-center ">
+          <img
+            className="rounded-lg h-140 object-center object-cover"
+            src="https://png.pngtree.com/png-clipart/20240510/original/pngtree-cheese-cake-strawberry-recipe-png-image_15059175.png"
+            alt="Strawberry Cake"
+          />
+        </div>
+        <div className="basis-1/2 p-20 flex flex-col items-center justify-center gap-10">
+          <p className="text-5xl font-medium">The best day starts here</p>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col gap-20 lg:flex-row">
+        <div className="basis-1/2 p-20 justify-center flex flex-col  gap-10">
+          <p className="text-5xl font-medium">Open everyday</p>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <div className="basis-1/2 flex justify-center ">
+          <img
+            className="rounded-lg h-140 object-center object-cover"
+            src="https://png.pngtree.com/png-clipart/20230825/original/pngtree-coffee-shop-building-vector-isolated-picture-image_8479829.png"
+            alt="Coffee Shop"
+          />
+        </div>
+      </div>
+      {/* <div className="flex flex-col justify-center items-center gap-10">
             <Carousel
               slides={coffee}
               options={{
-                slidesToScroll: "auto",
+                slidesToScroll: 3,
                 loop: true,
               }}
             />
             <button className="bg-egopink px-4 py-3 rounded-lg text-white">
               Go to Menu
             </button>
-          </div>
-          <div className="mt-20 p-10 lg:px-20 relative">
+          </div> */}
+      <section className="py-10 px-5">
+        <div className="w-full max-w-screen-xl mx-auto rounded-xl bg-donuts bg-repeat-none bg-cover md:pt-32 pt-48 relative">
+          <div className="relative md:left-8 left-4 md:bottom-8 bottom-4 inline-block">
             <img
-              className="rounded-lg h-171 w-full object-center object-cover"
-              src={donut}
-              alt="donut"
+              src="https://assets.website-files.com/640f43d9a407812b6c8e6220/640f43d9a407811e648e62ba_green%20cloud.svg"
+              alt="Green cloud"
+              className="md:w-full w-[290px]"
             />
-            <div className="absolute left-20 bottom-20">
-              <div className="relative">
-                <img
-                  src="https://assets.website-files.com/640f43d9a407812b6c8e6220/640f43d9a407811e648e62ba_green%20cloud.svg"
-                  alt="Green cloud"
-                />
-                <div className="absolute left-10 bottom-10 flex flex-col gap-6 w-80">
-                  <p className="text-5xl">Try our special desserts</p>
-                  <div>
-                    <button className="bg-egopink px-4 py-3 rounded-lg text-white">
-                      Go to Menu
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-20 flex flex-col gap-20 justify-center items-center">
-            <div className="flex flex-col gap-6 justify-center items-center w-2/3">
-              <p className="text-5xl">Pastry</p>
-              <p className="text-md text-center">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+            <div className="absolute left-8 bottom-10 flex flex-col md:gap-6 gap-4">
+              <p className="md:text-5xl text-2xl font-black">
+                Try our special desserts
               </p>
-            </div>
-            <div className="flex flex-col items-center justify-center gap-10">
-              <Carousel
-                slides={pastry}
-                options={{
-                  slidesToScroll: "auto",
-                  loop: true,
-                }}
-              />
-              <button className="bg-egopink px-4 py-3 rounded-lg text-white">
+              <button className="bg-egopink px-4 py-3 rounded-lg text-white max-w-max">
                 Go to Menu
               </button>
             </div>
           </div>
         </div>
+      </section>
+
+      <div className="mt-20 flex flex-col gap-20 justify-center items-center">
+        <div className="flex flex-col gap-6 justify-center items-center w-2/3">
+          <p className="text-5xl">Pastry</p>
+          <p className="text-md text-center">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        {/* <div className="flex flex-col items-center justify-center gap-10">
+          <Carousel
+            slides={pastry}
+            options={{
+              slidesToScroll: "auto",
+              loop: true,
+            }}
+          />
+          <button className="bg-egopink px-4 py-3 rounded-lg text-white">
+            Go to Menu
+          </button>
+        </div> */}
       </div>
       <div className="flex flex-col gap-20 p-10 lg:px-20 lg:flex-row bg-egogreen">
         <div className="hidden lg:flex w-1/2 justify-center ">

@@ -2,6 +2,7 @@ import { Carousel } from "./Carousel";
 import coffee from "../data/coffee.json";
 import donut from "../images/donuts.jpg";
 import pastry from "../data/pastry.json";
+
 export const Home = () => {
   return (
     <div className="flex flex-col gap-20">
@@ -85,8 +86,14 @@ export const Home = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center gap-20">
-            <Carousel slides={coffee} />
+          <div className="flex flex-col justify-center items-center gap-10">
+            <Carousel
+              slides={coffee}
+              options={{
+                slidesToScroll: "auto",
+                
+              }}
+            />
             <button className="bg-egopink px-4 py-3 rounded-lg text-white">
               Go to Menu
             </button>
@@ -124,8 +131,14 @@ export const Home = () => {
                 Exercitation veniam consequat sunt nostrud amet.
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center gap-14">
-              <Carousel slides={pastry} />
+            <div className="flex flex-col items-center justify-center gap-10">
+              <Carousel
+                slides={pastry}
+                options={{
+                  slidesToScroll: "auto",
+                  
+                }}
+              />
               <button className="bg-egopink px-4 py-3 rounded-lg text-white">
                 Go to Menu
               </button>

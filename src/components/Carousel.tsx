@@ -36,16 +36,13 @@ export const Carousel = ({ slides, options }: CarouselProps) => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  const [emblaRef, emblaApi] = useEmblaCarousel({ ...options, axis: axis });
-  //   const { selectedIndex, scrollSnaps, onDotButtonClick } =
-  //     useDotButton(emblaApi);
 
-  //   const {
-  //     prevBtnDisabled,
-  //     nextBtnDisabled,
-  //     onPrevButtonClick,
-  //     onNextButtonClick,
-  //   } = usePrevNextButtons(emblaApi);
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    ...options,
+    /* @ts-expect-error: Ignoring this type error */
+    axis: axis,
+  });
+
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
   }, [emblaApi]);
@@ -53,11 +50,7 @@ export const Carousel = ({ slides, options }: CarouselProps) => {
   const scrollNext = useCallback(() => {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
-  useEffect(() => {
-    if (emblaApi) {
-      console.log(slides); // Access API
-    }
-  }, []);
+
   return (
     <div className="w-full relative p-20">
       <section className={axis == "y" ? " embla_v" : " embla_h"}>
@@ -75,7 +68,6 @@ export const Carousel = ({ slides, options }: CarouselProps) => {
                 className={axis == "y" ? " embla__slide_v" : " embla__slide_h"}
                 key={slide.image}
               >
-                {/* <div className="embla__slide__number">{index + 1}</div> */}
                 <div className="flex flex-col  justify-center items-center">
                   <img
                     className="rounded-full w-72 "

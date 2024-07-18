@@ -91,7 +91,7 @@ export const Home = () => {
               slides={coffee}
               options={{
                 slidesToScroll: "auto",
-                
+                loop: true,
               }}
             />
             <button className="bg-egopink px-4 py-3 rounded-lg text-white">
@@ -136,7 +136,7 @@ export const Home = () => {
                 slides={pastry}
                 options={{
                   slidesToScroll: "auto",
-                  
+                  loop: true,
                 }}
               />
               <button className="bg-egopink px-4 py-3 rounded-lg text-white">
